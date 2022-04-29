@@ -1,8 +1,6 @@
 ### Content coming soon.
 
 
-My LinkedIn:
-[Link](https://www.linkedin.com/in/joseph-lee-woodall-iv/)
+My [LinkedIn](https://www.linkedin.com/in/joseph-lee-woodall-iv/)
 
-My Twitter:
-[Link](https://twitter.com/josephwoodall_)
+My [Twitter](https://twitter.com/josephwoodall_)
