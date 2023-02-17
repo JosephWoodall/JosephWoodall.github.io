@@ -12,7 +12,9 @@ import NavigationMenu from "./components/NavigationMenu";
 import Quote from "./components/Quote";
 import Footer from "./components/Footer";
 
-function App() {
+
+
+export default function App() {
   return (
     <>
       <NavigationMenu />
@@ -29,4 +31,3 @@ function App() {
   );
 }
 
-export default App;
