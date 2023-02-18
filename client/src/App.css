@@ -37,9 +37,7 @@
   }
 }
 
-
-
-/* === HEADER BUTTONS ===*/
+/* === NAVIGATION MENU BUTTONS ===*/
 .button {
   margin: 0;
   height: auto;
@@ -51,8 +49,8 @@
 /* button styling */
 .button {
   --border-right: 6px;
-  --text-stroke-color: rgba(255,255,255,0.6);
-  --animation-color: #37FF8B;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #37ff8b;
   --fs-size: 2em;
   letter-spacing: 3px;
   text-decoration: none;
@@ -79,5 +77,5 @@
 /* hover */
 .button:hover .hover-text {
   width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color))
+  filter: drop-shadow(0 0 23px var(--animation-color));
 }
