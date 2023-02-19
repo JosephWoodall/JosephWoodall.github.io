@@ -12,15 +12,15 @@ import NavigationMenu from "./components/NavigationMenu";
 import Quote from "./components/Quote";
 import Footer from "./components/Footer";
 
-
-
 export default function App() {
+  document.body.style.backgroundColor = "#282c34"
   return (
     <>
       <NavigationMenu />
       <Quote />
       <BrowserRouter>
         <Routes>
+          <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="github_repositories" element={<GithubRepositories />} />
           <Route path="*" element={<NoPage />} />
@@ -30,4 +30,3 @@ export default function App() {
     </>
   );
 }
-

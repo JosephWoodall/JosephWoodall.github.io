@@ -35,9 +35,9 @@ export default function Home() {
         be used to accurately and precisely recommend articles of clothing based
         on a users’ styling preferences.
       </div>
-      <Button variant="outline-primary" href="">
-        Link to the Article
-      </Button>{" "}
+      <body-button variant="outline-primary" href="">
+        See the Article
+      </body-button>{" "}
       <h1>Professional High Level Overview</h1>
       <div>Education</div>
       <div>
@@ -77,9 +77,9 @@ export default function Home() {
         (LINK TO CAPSTONE RESEARCH ARTICLE ON SMU DATA SCIENCE REVIEW TO GO
         HERE)
       </div>
-      <Button variant="outline-primary" href="">
+      <body-button variant="outline-primary" href="">
         See my Resume
-      </Button>{" "}
+      </body-button>{" "}
     </>
   );
 }
