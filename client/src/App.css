@@ -1,5 +1,6 @@
-body{
-  background-color: #1bfd9c;
+.body-background {
+  background-color: #373737;
+  color: white;
 }
 
 /* === NAVIGATION MENU BUTTONS ===*/
@@ -36,7 +37,7 @@ body{
   inset: 0;
   border-right: var(--border-right) solid var(--animation-color);
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.4s;
   -webkit-text-stroke: 1px var(--animation-color);
 }
 /* hover */
@@ -55,7 +56,7 @@ body-button {
   font-family: inherit;
   border-radius: 0.6em;
   overflow: hidden;
-  transition: all 0.3s;
+  transition: all 0.4s;
   line-height: 1.4em;
   border: 2px solid var(--green);
   background: linear-gradient(
@@ -79,8 +80,8 @@ body-button:hover {
 body-button:before {
   content: "";
   position: absolute;
-  left: -4em;
-  width: 4em;
+  left: -0.1em;
+  width: 3em;
   height: 100%;
   top: 0;
   transition: transform 0.4s ease-in-out;
@@ -94,5 +95,6 @@ body-button:before {
 }
 
 body-button:hover:before {
-  transform: translateX(15em);
+  transform: translateX(9.5em);
 }
+

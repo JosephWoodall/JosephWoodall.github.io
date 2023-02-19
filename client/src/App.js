@@ -13,11 +13,10 @@ import Quote from "./components/Quote";
 import Footer from "./components/Footer";
 
 export default function App() {
-  document.body.style.backgroundColor = "#282c34"
   return (
     <>
       <NavigationMenu />
-      <Quote />
+      <div className='body-background'>
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
@@ -26,6 +25,7 @@ export default function App() {
           <Route path="*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>
+      </div>
       <Footer />
     </>
   );

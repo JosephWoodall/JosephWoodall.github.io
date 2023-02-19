@@ -1,8 +1,9 @@
-import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/esm/Container";
 
 export default function Home() {
   return (
     <>
+    <Container classname = 'body'>
       <h1>Summary</h1>
       <div>
         Data, Decisions, and Learning Executive Drive, Results-Oriented,
@@ -80,6 +81,7 @@ export default function Home() {
       <body-button variant="outline-primary" href="">
         See my Resume
       </body-button>{" "}
+      </Container>
     </>
   );
 }
