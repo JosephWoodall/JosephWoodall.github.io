@@ -1,6 +1,15 @@
 .body-background {
   background-color: #373737;
   color: white;
+  padding: 2%;
+}
+
+h3 {
+  padding: 5%;
+}
+
+h1 {
+  padding: 5%;
 }
 
 /* === NAVIGATION MENU BUTTONS ===*/
@@ -95,6 +104,5 @@ body-button:before {
 }
 
 body-button:hover:before {
-  transform: translateX(9.5em);
+  transform: translateX(9.5rem);
 }
-

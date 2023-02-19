@@ -19,9 +19,9 @@ export default function NavigationMenu() {
             </Nav.Link>
             <Nav.Link href="/github_repositories">
               <button data-text="Awesome" class="button">
-                <span class="actual-text">&nbsp;Github&nbsp;</span>
+                <span class="actual-text">&nbsp;Github_Highlights&nbsp;</span>
                 <span class="hover-text" aria-hidden="true">
-                  &nbsp;Github&nbsp;
+                  &nbsp;Github_Highlights&nbsp;
                 </span>
               </button>
             </Nav.Link>
