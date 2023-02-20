@@ -36,12 +36,10 @@ export default function Home() {
             <h1>Research Spotlight</h1>
             <div>
               Deep Learning for Online Fashion: A Novel Solution for the Retail
-              E-Commerce Industry
+              E-Commerce Industry.<i> The link to the article itself is coming soon in the next issue of the SMU Data Science Journal!</i>
             </div>
             <div className="body-background"></div>
-            <body-button variant="outline-primary" href="">
-              See the Article
-            </body-button>{" "}
+            {/*<body-button variant="outline-primary" href=""> See the Article</body-button>{" "}*/}
           </Col>
           <Col xs={6} md={4}>
             <div>
@@ -64,7 +62,20 @@ export default function Home() {
       <Container>
         <div className="body-background"></div>
         <Row>
-          <h1>Professional High Level Overview</h1>
+          <Col sm>
+            <h1>Professional High Level Overview</h1>
+            <a href="https://www.overleaf.com/read/vdwzyqmwhcjc" target='_blank'>
+            <body-button
+              variant="outline-primary"
+              
+            >
+              See my Resume
+            </body-button>{" "}
+            </a>
+          </Col>
+        </Row>
+        <Row>
+          <div className="body-background"></div>
           <Col sm>
             <div>Education</div>
             <div>
@@ -147,9 +158,6 @@ export default function Home() {
               </ul>
             </div>
           </Col>
-          <body-button variant="outline-primary" href="">
-            See my Resume
-          </body-button>{" "}
         </Row>
       </Container>
     </>

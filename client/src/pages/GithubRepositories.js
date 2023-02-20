@@ -5,7 +5,6 @@ import Col from "react-bootstrap/Col";
 export default function GithubRepositories() {
   return (
     <>
-      <div className="body-background"></div>
       <Container>
         <Row>
           <h1>Github Repositories</h1>
@@ -19,9 +18,11 @@ export default function GithubRepositories() {
           <Row>
             <Col xs={6} md={4}>
               <h3>Turbo Barnacle</h3>
+              <a href='https://github.com/JosephWoodall/turbo-barnacle' target='_blank'>
               <body-button variant="outline-primary" href="">
                 See the Repo
               </body-button>{" "}
+              </a>
             </Col>
             <Col xs={6} md={4}>
               <div>
@@ -40,9 +41,11 @@ export default function GithubRepositories() {
           <Row>
             <Col xs={6} md={4}>
               <h3>Capstone</h3>
+              <a href='https://github.com/zharris1/Capstone' target='_blank'>
               <body-button variant="outline-primary" href="">
                 See the Repo
               </body-button>{" "}
+              </a>
             </Col>
             <Col xs={6} md={4}>
               <div>
@@ -66,9 +69,11 @@ export default function GithubRepositories() {
           <Row>
             <Col xs={6} md={4}>
               <h3>Reinforcement Learning</h3>
+              <a href='https://github.com/JosephWoodall/Reinforcement-Learning' target='_blank'>
               <body-button variant="outline-primary" href="">
                 See the Repo
               </body-button>{" "}
+              </a>
             </Col>
             <Col xs={6} md={4}>
               <div>
@@ -95,9 +100,11 @@ export default function GithubRepositories() {
           <Row>
             <Col xs={6} md={4}>
               <h3>EPS Estimate Revision Momentum Modelling</h3>
+              <a href='https://github.com/JosephWoodall/ML1_Project' target='_blank'>
               <body-button variant="outline-primary" href="">
                 See the Repo
               </body-button>{" "}
+              </a>
             </Col>
             <Col xs={6} md={4}>
               <div>
@@ -129,9 +136,11 @@ export default function GithubRepositories() {
           <Row>
             <Col xs={6} md={4}>
               <h3>MERN Template</h3>
+              <a href='https://github.com/JosephWoodall/mern_template' target='_blank'>
               <body-button variant="outline-primary" href="">
                 See the Repo
               </body-button>{" "}
+              </a>
             </Col>
             <Col xs={6} md={4}>
               <div>
@@ -159,9 +168,11 @@ export default function GithubRepositories() {
           <Row>
             <Col xs={6} md={4}>
               <h3>Web3 NFT Web App</h3>
+              <a href='https://github.com/JosephWoodall/Web3ExampleApp' target='_blank'>
               <body-button variant="outline-primary" href="">
                 See the Repo
               </body-button>{" "}
+              </a>
             </Col>
             <Col xs={6} md={4}>
               <div>
@@ -184,9 +195,11 @@ export default function GithubRepositories() {
           <Row>
             <Col xs={6} md={4}>
               <h3>"Just the link, please"</h3>
+              <a href='https://github.com/JosephWoodall?tab=repositories' target='_blank'>
               <body-button variant="outline-primary" href="">
-                See the Repo
+                Make it so, No. 1
               </body-button>{" "}
+              </a>
             </Col>
             <Col xs={6} md={4}>
               <div>
