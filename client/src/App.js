@@ -17,7 +17,7 @@ export default function App() {
     <>
       <NavigationMenu />
       <div className='body-background'>
-      <BrowserRouter>
+      <BrowserRouter basename={process.eng.PUBLIC_URL}>
         <Routes>
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
