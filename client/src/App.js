@@ -1,4 +1,4 @@
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter, BrowserRouter } from "react-router-dom";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,14 +15,16 @@ export default function App() {
     <>
       <NavigationMenu />
       <div className='body-background'>
-        <HashRouter basename="/">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="home" element={<Home />} />
-            <Route path="github_repositories" element={<GithubRepositories />} />
-            <Route path="*" element={<NoPage />} />
-          </Routes>
-        </HashRouter>
+        <BrowserRouter>
+          <HashRouter basename="/">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="home" element={<Home />} />
+              <Route path="github_repositories" element={<GithubRepositories />} />
+              <Route path="*" element={<NoPage />} />
+            </Routes>
+          </HashRouter>
+        </BrowserRouter>
       </div>
       <Footer />
     </>
