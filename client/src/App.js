@@ -20,9 +20,9 @@ export default function App() {
         <HashRouter>
           <Routes>
             <Route index element={<Home />} />
-            <Route path="home" element={<Home />} />
-            <Route path="github_repositories" element={<GithubRepositories />} />
-            <Route path="*" element={<NoPage />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/github_repositories" element={<GithubRepositories />} />
+            <Route path="/*" element={<NoPage />} />
           </Routes>
         </HashRouter>
       </div>
