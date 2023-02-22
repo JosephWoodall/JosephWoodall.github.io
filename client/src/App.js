@@ -15,14 +15,12 @@ export default function App() {
     <>
       <NavigationMenu />
       <div className='body-background'>
-        <HashRouter>
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="home" element={<Home />} />
-            <Route path="github_repositories" element={<GithubRepositories />} />
-            <Route path="*" element={<NoPage />} />
-          </Routes>
-        </HashRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
+          <Route path="github_repositories" element={<GithubRepositories />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
       </div>
       <Footer />
     </>
