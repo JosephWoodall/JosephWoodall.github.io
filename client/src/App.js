@@ -1,5 +1,6 @@
-import { Routes, Route, HashRouter, BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
+import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -8,25 +9,24 @@ import GithubRepositories from "./pages/GithubRepositories";
 import NoPage from "./pages/NoPage";
 
 import NavigationMenu from "./components/NavigationMenu";
+import Quote from "./components/Quote";
 import Footer from "./components/Footer";
 
 export default function App() {
   return (
     <>
-      <NavigationMenu />
-      <div className='body-background'>
-        <BrowserRouter>
-          <HashRouter basename="/">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="home" element={<Home />} />
-              <Route path="github_repositories" element={<GithubRepositories />} />
-              <Route path="*" element={<NoPage />} />
-            </Routes>
-          </HashRouter>
-        </BrowserRouter>
-      </div>
-      <Footer />
+      <HashRouter>
+        <NavigationMenu />
+        <div className='body-background'>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="home" element={<Home />} />
+            <Route path="github_repositories" element={<GithubRepositories />} />
+            <Route path="*" element={<NoPage />} />
+          </Routes>
+        </div>
+        <Footer />
+      </HashRouter>
     </>
   );
 }
