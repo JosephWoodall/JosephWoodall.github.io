@@ -120,3 +120,7 @@ body-button:before {
 body-button:hover:before {
   transform: translateX(9.5rem);
 }
+
+Canvas {
+  color: inherit;
+}

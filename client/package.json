@@ -42,7 +42,10 @@
     ]
   },
   "devDependencies": {
+    "@react-three/fiber": "^8.11.2",
+    "@types/three": "^0.149.0",
     "gh-pages": "^5.0.0",
-    "react-router-dom": "^6.8.1"
+    "react-router-dom": "^6.8.1",
+    "three": "^0.149.0"
   }
 }

@@ -1,12 +1,16 @@
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import threeJSVizOne from "../components/threeJSVizOne";
 
 export default function Home() {
   return (
     <>
+      <threeJSVizOne />
       <Container>
         <div className="body-background"></div>
+        <Row>
+        </Row>
         <Row>
           <Col xs={6} md={4}>
             <h1>Summary</h1>
@@ -65,12 +69,12 @@ export default function Home() {
           <Col sm>
             <h1>Professional High Level Overview</h1>
             <a href="https://www.overleaf.com/read/vdwzyqmwhcjc" target='_blank'>
-            <body-button
-              variant="outline-primary"
-              
-            >
-              See my Resume
-            </body-button>{" "}
+              <body-button
+                variant="outline-primary"
+
+              >
+                See my Resume
+              </body-button>{" "}
             </a>
           </Col>
         </Row>

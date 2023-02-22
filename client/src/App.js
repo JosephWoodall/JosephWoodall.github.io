@@ -16,6 +16,7 @@ export default function App() {
     <>
       <HashRouter basename="/">
         <NavigationMenu />
+
         <div className='body-background'>
           <Routes>
             <Route index element={<Home />} />

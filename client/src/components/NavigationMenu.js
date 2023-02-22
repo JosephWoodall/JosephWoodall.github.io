@@ -3,10 +3,14 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 
+import { Canvas } from '@react-three/fiber'
+import Cylinder3d from "../components/threeJSVizOne";
+
 export default function NavigationMenu() {
   return (
     <>
       <Navbar bg="dark" variant="dark">
+
         <Container>
           <Navbar.Brand as={Link} to="home">Joseph Woodall</Navbar.Brand>
           <Nav className="me-auto">
@@ -27,6 +31,11 @@ export default function NavigationMenu() {
               </button>
             </Nav.Link>
           </Nav>
+          <Canvas>
+            <pointLight position={[10, 10, 10]} />
+            <ambientLight />
+            <Cylinder3d position={[0, 0, 0]} />
+          </Canvas>
         </Container>
       </Navbar>
     </>
