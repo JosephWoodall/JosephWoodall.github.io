@@ -15,7 +15,7 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
-      <HashRouter>
+      <HashRouter basename="/">
         <NavigationMenu />
         <div className='body-background'>
           <Routes>
