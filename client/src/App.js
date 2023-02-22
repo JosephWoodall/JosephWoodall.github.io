@@ -19,9 +19,9 @@ export default function App() {
           <HashRouter basename="/">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="home" element={<Home />} />
-              <Route path="github_repositories" element={<GithubRepositories />} />
-              <Route path="*" element={<NoPage />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/github_repositories" element={<GithubRepositories />} />
+              <Route path="/*" element={<NoPage />} />
             </Routes>
           </HashRouter>
         </BrowserRouter>
