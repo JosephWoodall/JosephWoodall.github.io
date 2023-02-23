@@ -41,7 +41,7 @@ export default function Box({ points }) {
     // Rotate the box to simulate a galaxy
     ref.current.rotation.x = elapsed * 0.0;
     ref.current.rotation.y = elapsed * 0.0;
-    ref.current.rotation.z = elapsed * 0.0;
+    ref.current.rotation.z = elapsed * 0.05;
   });
 
   return (

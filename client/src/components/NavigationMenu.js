@@ -32,7 +32,7 @@ export default function NavigationMenu() {
         >
           <perspectiveCamera
             position={[0, 0, 10]}
-            fov={60}
+            fov={100}
             aspect={window.innerWidth / window.innerHeight}
             onUpdate={(camera) => camera.updateProjectionMatrix()}
           />
