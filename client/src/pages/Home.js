@@ -1,12 +1,10 @@
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import threeJSVizOne from "../components/threeJSVizOne";
 
 export default function Home() {
   return (
     <>
-      <threeJSVizOne />
       <Container>
         <div className="body-background"></div>
         <Row>

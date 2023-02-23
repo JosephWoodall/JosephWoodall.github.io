@@ -10,24 +10,24 @@ import NoPage from "./pages/NoPage";
 import NavigationMenu from "./components/NavigationMenu";
 import Footer from "./components/Footer";
 
-
 export default function App() {
   return (
     <>
       <HashRouter basename="/">
         <NavigationMenu />
-
-        <div className='body-background'>
+        <div className="body-background">
           <Routes>
             <Route index element={<Home />} />
             <Route exact path="/home" element={<Home />} />
-            <Route path="/github_repositories" element={<GithubRepositories />} />
+            <Route
+              path="/github_repositories"
+              element={<GithubRepositories />}
+            />
             <Route path="/*" element={<NoPage />} />
           </Routes>
         </div>
         <Footer />
       </HashRouter>
-
     </>
   );
 }
