@@ -10,7 +10,6 @@ import NoPage from "./pages/NoPage";
 import NavigationMenu from "./components/NavigationMenu";
 import Footer from "./components/Footer";
 
-
 export default function App() {
   return (
     <>

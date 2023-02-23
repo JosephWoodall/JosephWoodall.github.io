@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 
 import { Canvas, useThree } from "@react-three/fiber";
-import Box from "../components/threeJSVizOne";
+import Starfield from "./Starfield";
 import * as THREE from "three";
 
 export default function NavigationMenu() {
@@ -41,7 +41,7 @@ export default function NavigationMenu() {
             />
             <ambientLight intensity={0.5} />
             <pointLight position={[10, 10, 10]} />
-            <Box points={points} />
+            <Starfield points={points} />
           </Canvas>
           <Container fluid>
             <Navbar.Brand as={Link} to="home">
