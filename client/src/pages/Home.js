@@ -83,7 +83,7 @@ export default function Home() {
             <div>
               <ul>
                 <li>
-                  M.S. in Data Science: GPA: 3.8 Southern Methodist University
+                  M.S. in Data Science: GPA: 3.9 Southern Methodist University
                 </li>
                 <li>
                   B.A. in Political Science: GPA: 3.7 | Cum Laude Honors Texas
