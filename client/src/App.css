@@ -36,7 +36,7 @@ a {
   --border-right: 6px;
   --text-stroke-color: rgba(255, 255, 255, 0.6);
   --animation-color: #37ff8b;
-  --fs-size: 2em;
+  --fs-size: 1.8em;
 
   background: transparent;
   padding: 0;
@@ -105,6 +105,15 @@ body-button {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  body-button {
+    padding: 10px;
+  }
+  body-button:hover:before {
+    transform: translateX(1rem);
+  }
+}
+
 body-button:hover {
   color: #82ffc9;
   box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6),
@@ -129,7 +138,7 @@ body-button:before {
 }
 
 body-button:hover:before {
-  transform: translateX(9.5rem);
+  transform: translateX(5em);
 }
 
 Canvas {

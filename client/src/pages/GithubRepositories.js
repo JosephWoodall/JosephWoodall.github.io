@@ -197,7 +197,7 @@ export default function GithubRepositories() {
               <h3>"Just the link, please"</h3>
               <a href='https://github.com/JosephWoodall?tab=repositories' target='_blank'>
               <body-button variant="outline-primary" href="">
-                Make it so, No. 1
+                See the Repo
               </body-button>{" "}
               </a>
             </Col>
