@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
@@ -22,7 +22,7 @@ export default function NavigationMenu() {
   return (
     <>
       <div className="NavMenu">
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" collapseOnSelect expand='lg'>
           <Canvas
             clearColor="transparent"
             style={{
@@ -49,7 +49,7 @@ export default function NavigationMenu() {
             </Navbar.Brand>
             <Row>
               <Nav className="me-auto">
-                <Col xs>
+                <Col>
                   <Nav.Link as={Link} to="/home">
                     <button data-text="Awesome" class="button">
                       <span class="actual-text">&nbsp;Home&nbsp;</span>
@@ -59,10 +59,12 @@ export default function NavigationMenu() {
                     </button>
                   </Nav.Link>
                 </Col>
-                <Col xs>
+                <Col>
                   <Nav.Link as={Link} to="/github_repositories">
                     <button data-text="Awesome" class="button">
-                      <span class="actual-text">&nbsp;Github_Highlights&nbsp;</span>
+                      <span class="actual-text">
+                        &nbsp;Github_Highlights&nbsp;
+                      </span>
                       <span class="hover-text" aria-hidden="true">
                         &nbsp;Github_Highlights&nbsp;
                       </span>

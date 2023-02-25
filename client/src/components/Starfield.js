@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 
 export default function Starfield({ points }) {
   const ref = useRef();
+  const { width, height } = useThree(state => state.viewport)
 
   // Compute the bounding box for the points
   const box = new THREE.Box3().setFromPoints(points);
@@ -45,7 +46,7 @@ export default function Starfield({ points }) {
   });
 
   return (
-    <mesh ref={ref}>
+    <mesh ref={ref} scale={[width, height, 1]}>
       <boxBufferGeometry args={[10, 10, 10]} />
       <meshBasicMaterial color={0xffffff} transparent opacity={0} />
       {points.map((point, index) => (

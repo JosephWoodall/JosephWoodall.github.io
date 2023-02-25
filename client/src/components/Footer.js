@@ -1,15 +1,47 @@
 import Container from "react-bootstrap/Container";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
+
+import { Canvas, useThree } from "@react-three/fiber";
+import Starfield from "./Starfield";
+import * as THREE from "three";
 
 export default function Footer() {
+  const points = [];
+  for (let i = 0; i < 8000; i++) {
+    const x = Math.random() * 10 - 5;
+    const y = Math.random() * 10 - 5;
+    const z = Math.random() * 10 - 5;
+    const point = new THREE.Vector3(x, y, z);
+    points.push(point);
+  }
+
   return (
     <>
       <div className="NavMenu">
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" collapseOnSelect expand="lg">
+          <Canvas
+            clearColor="transparent"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+            }}
+          >
+            <perspectiveCamera
+              position={[0, 0, 10]}
+              fov={100}
+              aspect={window.innerWidth / window.innerHeight}
+              onUpdate={(camera) => camera.updateProjectionMatrix()}
+            />
+            <ambientLight intensity={0.5} />
+            <pointLight position={[10, 10, 10]} />
+            <Starfield points={points} />
+          </Canvas>
           <Container fluid>
             <Navbar.Brand href="home">Joseph Woodall</Navbar.Brand>
             <Row>
@@ -27,7 +59,9 @@ export default function Footer() {
                 <Col xs>
                   <Nav.Link href="https://github.com/JosephWoodall">
                     <button data-text="Awesome" class="button">
-                      <span class="actual-text">&nbsp;Github_Homepage&nbsp;</span>
+                      <span class="actual-text">
+                        &nbsp;Github_Homepage&nbsp;
+                      </span>
                       <span class="hover-text" aria-hidden="true">
                         &nbsp;Github_Homepage&nbsp;
                       </span>
