@@ -33,7 +33,7 @@ export default function Background() {
             >
               <perspectiveCamera
                 position={[0, 0, 10]}
-                fov={100}
+                fov={120}
                 aspect={window.innerWidth / window.innerHeight}
               />
               <ambientLight intensity={0.5} />
