@@ -9,7 +9,7 @@ export default function Starfield() {
   for (let i = 0; i < 10000; i++) {
     const x = Math.random() * 10 - 5;
     const y = Math.random() * 10 - 5;
-    const z = Math.random() * 10 - 5;
+    const z = Math.random() * 30 - 10; // Adjust this value to change the initial z position of the points
     const point = new THREE.Vector3(x, y, z);
     points.push(point);
   }
@@ -38,7 +38,7 @@ export default function Starfield() {
     ref.current.scale.set(
       box.max.x - box.min.x,
       box.max.y - box.min.y,
-      box.max.z - box.min.z * 0.5 // Shorten the box's Z axis
+      box.max.z - box.min.z / 1000 // Shorten the box's Z axis
     );
 
     // Position the box at the center of the points

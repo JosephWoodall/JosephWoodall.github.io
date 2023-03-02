@@ -9,14 +9,14 @@ export default function Home() {
 
       <Container >
         <Row>
-          <Col xs={6} md={4}>
+          <Col sm>
             <h1>Summary</h1>
             <div>
               Data, Decisions, and Learning Executive Drive, Results-Oriented,
               Reliable
             </div>
           </Col>
-          <Col xs={6} md={4}>
+          <Col sm>
             <div>
               I am a Data Scientist and Data Engineer with experience in
               statistical analytics in cloud and local environments with notable
@@ -33,7 +33,7 @@ export default function Home() {
       <Container>
         <div className="body-background"></div>
         <Row>
-          <Col xs={6} md={4}>
+          <Col sm>
             <h1>Research Spotlight</h1>
             <div>
               Deep Learning for Online Fashion: A Novel Solution for the Retail
@@ -42,7 +42,7 @@ export default function Home() {
             <div className="body-background"></div>
             {/*<body-button variant="outline-primary" href=""> See the Article</body-button>{" "}*/}
           </Col>
-          <Col xs={6} md={4}>
+          <Col sm>
             <div>
               The online shopping experience for clothing can be further
               enhanced by implementing Deep Learning techniques, such as
@@ -61,7 +61,6 @@ export default function Home() {
         </Row>
       </Container>
       <Container>
-        <div className="body-background"></div>
         <Row>
           <Col sm>
             <h1>Professional High Level Overview</h1>
