@@ -16,15 +16,15 @@ export default function GithubRepositories() {
       <Container>
         <div className="body-background">
           <Row>
-            <Col xs={6} md={4}>
+            <Col sm>
               <h3>Turbo Barnacle</h3>
               <a href='https://github.com/JosephWoodall/turbo-barnacle' target='_blank'>
-              <body-button variant="outline-primary" href="">
-                See the Repo
-              </body-button>{" "}
+                <body-button variant="outline-primary" href="">
+                  See the Repo
+                </body-button>{" "}
               </a>
             </Col>
-            <Col xs={6} md={4}>
+            <Col sm>
               <div>
                 A simple, reproducible, and personal library I am continuously
                 adding to. The library mainly consists of Data Science and Data
@@ -39,15 +39,15 @@ export default function GithubRepositories() {
       <Container>
         <div className="body-background">
           <Row>
-            <Col xs={6} md={4}>
+            <Col sm>
               <h3>Capstone</h3>
               <a href='https://github.com/zharris1/Capstone' target='_blank'>
-              <body-button variant="outline-primary" href="">
-                See the Repo
-              </body-button>{" "}
+                <body-button variant="outline-primary" href="">
+                  See the Repo
+                </body-button>{" "}
               </a>
             </Col>
-            <Col xs={6} md={4}>
+            <Col sm>
               <div>
                 This repo serves as the container for the code we developed for
                 our Capstone project, "Deep Learning for Online Fashion: A Novel
@@ -67,15 +67,15 @@ export default function GithubRepositories() {
       <Container>
         <div className="body-background">
           <Row>
-            <Col xs={6} md={4}>
+            <Col sm>
               <h3>Reinforcement Learning</h3>
               <a href='https://github.com/JosephWoodall/Reinforcement-Learning' target='_blank'>
-              <body-button variant="outline-primary" href="">
-                See the Repo
-              </body-button>{" "}
+                <body-button variant="outline-primary" href="">
+                  See the Repo
+                </body-button>{" "}
               </a>
             </Col>
-            <Col xs={6} md={4}>
+            <Col sm>
               <div>
                 I am very interested in Reinforcement Learning (RL). I completed
                 a project on the application of RL in surgical settings in the
@@ -98,15 +98,15 @@ export default function GithubRepositories() {
       <Container>
         <div className="body-background">
           <Row>
-            <Col xs={6} md={4}>
+            <Col sm>
               <h3>EPS Estimate Revision Momentum Modelling</h3>
               <a href='https://github.com/JosephWoodall/ML1_Project' target='_blank'>
-              <body-button variant="outline-primary" href="">
-                See the Repo
-              </body-button>{" "}
+                <body-button variant="outline-primary" href="">
+                  See the Repo
+                </body-button>{" "}
               </a>
             </Col>
-            <Col xs={6} md={4}>
+            <Col sm>
               <div>
                 One of my colleagues and I decided to apply a variety of ML
                 Classifiers and Regressors to a corpus of financial data. We
@@ -134,15 +134,15 @@ export default function GithubRepositories() {
       <Container>
         <div className="body-background">
           <Row>
-            <Col xs={6} md={4}>
+            <Col sm>
               <h3>MERN Template</h3>
               <a href='https://github.com/JosephWoodall/mern_template' target='_blank'>
-              <body-button variant="outline-primary" href="">
-                See the Repo
-              </body-button>{" "}
+                <body-button variant="outline-primary" href="">
+                  See the Repo
+                </body-button>{" "}
               </a>
             </Col>
-            <Col xs={6} md={4}>
+            <Col sm>
               <div>
                 I'm also very interested in full-stack development. So much so
                 that I spent several evenings teaching myself how to develop a
@@ -166,15 +166,15 @@ export default function GithubRepositories() {
       <Container>
         <div className="body-background">
           <Row>
-            <Col xs={6} md={4}>
+            <Col sm>
               <h3>Web3 NFT Web App</h3>
               <a href='https://github.com/JosephWoodall/Web3ExampleApp' target='_blank'>
-              <body-button variant="outline-primary" href="">
-                See the Repo
-              </body-button>{" "}
+                <body-button variant="outline-primary" href="">
+                  See the Repo
+                </body-button>{" "}
               </a>
             </Col>
-            <Col xs={6} md={4}>
+            <Col sm>
               <div>
                 Yes, my interests also intersect with Web3. I have deep
                 experience in blockchain, and wanted to teach myself more about
@@ -193,15 +193,15 @@ export default function GithubRepositories() {
       <Container>
         <div className="body-background">
           <Row>
-            <Col xs={6} md={4}>
+            <Col sm>
               <h3>"Just the link, please"</h3>
               <a href='https://github.com/JosephWoodall?tab=repositories' target='_blank'>
-              <body-button variant="outline-primary" href="">
-                See the Repo
-              </body-button>{" "}
+                <body-button variant="outline-primary" href="">
+                  See the Repo
+                </body-button>{" "}
               </a>
             </Col>
-            <Col xs={6} md={4}>
+            <Col sm>
               <div>
                 Ok ok fine, use the button below to go to my Github profile,
                 where you can navigate on your own accord.

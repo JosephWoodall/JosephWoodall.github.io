@@ -6,7 +6,7 @@ export default function Starfield() {
   const ref = useRef();
   const { width, height } = useThree(state => state.viewport)
   const points = [];
-  for (let i = 0; i < 8000; i++) {
+  for (let i = 0; i < 10000; i++) {
     const x = Math.random() * 10 - 5;
     const y = Math.random() * 10 - 5;
     const z = Math.random() * 10 - 5;

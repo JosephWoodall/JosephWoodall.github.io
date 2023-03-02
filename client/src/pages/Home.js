@@ -1,16 +1,13 @@
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Canvas, useThree } from "@react-three/fiber";
 
 
 export default function Home() {
   return (
     <>
-      <Container>
-        <div className="body-background"></div>
-        <Row>
-        </Row>
+
+      <Container >
         <Row>
           <Col xs={6} md={4}>
             <h1>Summary</h1>
@@ -164,6 +161,7 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
+      <div className="body-background"></div>
     </>
   );
 }
