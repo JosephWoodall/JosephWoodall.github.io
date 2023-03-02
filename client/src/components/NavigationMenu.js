@@ -64,6 +64,40 @@ export default function NavigationMenu() {
                     </button>
                   </Nav.Link>
                 </Col>
+                <Nav className="me-auto">
+                  <Col xs>
+                    <Nav.Link href="https://www.linkedin.com/in/joseph-lee-woodall-iv/">
+                      <button data-text="Awesome" class="button">
+                        <span class="actual-text">&nbsp;LinkedIn&nbsp;</span>
+                        <span class="hover-text" aria-hidden="true">
+                          &nbsp;LinkedIn&nbsp;
+                        </span>
+                      </button>
+                    </Nav.Link>
+                  </Col>
+                  <Col xs>
+                    <Nav.Link href="https://github.com/JosephWoodall">
+                      <button data-text="Awesome" class="button">
+                        <span class="actual-text">
+                          &nbsp;Github_Homepage&nbsp;
+                        </span>
+                        <span class="hover-text" aria-hidden="true">
+                          &nbsp;Github_Homepage&nbsp;
+                        </span>
+                      </button>
+                    </Nav.Link>
+                  </Col>
+                  <Col xs>
+                    <Nav.Link href="https://twitter.com/josephwoodall_">
+                      <button data-text="Awesome" class="button">
+                        <span class="actual-text">&nbsp;Twitter&nbsp;</span>
+                        <span class="hover-text" aria-hidden="true">
+                          &nbsp;Twitter&nbsp;
+                        </span>
+                      </button>
+                    </Nav.Link>
+                  </Col>
+                </Nav>
               </Nav>
             </Row>
           </Container>
