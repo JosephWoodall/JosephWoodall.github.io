@@ -2,9 +2,17 @@ import React, { useRef } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 
-export default function Starfield({ points }) {
+export default function Starfield() {
   const ref = useRef();
   const { width, height } = useThree(state => state.viewport)
+  const points = [];
+  for (let i = 0; i < 8000; i++) {
+    const x = Math.random() * 10 - 5;
+    const y = Math.random() * 10 - 5;
+    const z = Math.random() * 10 - 5;
+    const point = new THREE.Vector3(x, y, z);
+    points.push(point);
+  }
 
   // Compute the bounding box for the points
   const box = new THREE.Box3().setFromPoints(points);

@@ -10,14 +10,7 @@ import Starfield from "./Starfield";
 import * as THREE from "three";
 
 export default function NavigationMenu() {
-  const points = [];
-  for (let i = 0; i < 8000; i++) {
-    const x = Math.random() * 10 - 5;
-    const y = Math.random() * 10 - 5;
-    const z = Math.random() * 10 - 5;
-    const point = new THREE.Vector3(x, y, z);
-    points.push(point);
-  }
+
 
   return (
     <>
@@ -41,7 +34,7 @@ export default function NavigationMenu() {
             />
             <ambientLight intensity={0.5} />
             <pointLight position={[10, 10, 10]} />
-            <Starfield points={points} />
+            <Starfield />
           </Canvas>
           <Container fluid>
             <Navbar.Brand as={Link} to="home">
