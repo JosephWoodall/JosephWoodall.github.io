@@ -2,12 +2,10 @@ import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-
 export default function Home() {
   return (
     <>
-
-      <Container >
+      <Container>
         <Row>
           <Col sm>
             <h1>Summary</h1>
@@ -37,7 +35,12 @@ export default function Home() {
             <h1>Research Spotlight</h1>
             <div>
               Deep Learning for Online Fashion: A Novel Solution for the Retail
-              E-Commerce Industry.<i> The link to the article itself is coming soon in the next issue of the SMU Data Science Journal!</i>
+              E-Commerce Industry.
+              <i>
+                {" "}
+                The link to the article itself is coming soon in the next issue
+                of the SMU Data Science Journal!
+              </i>
             </div>
             <div className="body-background"></div>
             {/*<body-button variant="outline-primary" href=""> See the Article</body-button>{" "}*/}
@@ -64,13 +67,11 @@ export default function Home() {
         <Row>
           <Col sm>
             <h1>Professional High Level Overview</h1>
-            <a href="https://www.overleaf.com/read/vdwzyqmwhcjc" target='_blank'>
-              <body-button
-                variant="outline-primary"
-
-              >
-                See my Resume
-              </body-button>{" "}
+            <a
+              href="https://www.overleaf.com/read/vdwzyqmwhcjc"
+              target="_blank"
+            >
+              <body-button variant="outline-primary">See my Resume</body-button>{" "}
             </a>
           </Col>
         </Row>
@@ -125,14 +126,20 @@ export default function Home() {
             <div>
               <ul>
                 <li>
-                  Evolv Consulting: Data Science and Data Engineering Consultant
-                  June 2021 - Present{" "}
+                  Evolv Consulting (Multiple Client Placements): Data Science
+                  and Data Engineering Consultant | June 2021 - Present{" "}
                 </li>
                 <li>
                   EPSoft Technologies: Director of Data Science, Research and
-                  Development December 2019 - June 2021
+                  Development | December 2019 - June 2021
                 </li>
-                <li>Kaplan: LSAT Prep Instructor August 2018 - January 2021</li>
+                <li>
+                  Kaplan: LSAT Prep Instructor | August 2018 - January 2021
+                </li>
+                <li>
+                  U.S. House of Representatives: Statistician, Intern | January
+                  2013 - January 2016
+                </li>
               </ul>
             </div>
           </Col>
