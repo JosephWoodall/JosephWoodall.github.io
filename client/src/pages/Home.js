@@ -126,8 +126,11 @@ export default function Home() {
             <div>
               <ul>
                 <li>
+                  Worldwide Express: Process Engineer II | May 2023 - Present{" "}
+                </li>
+                <li>
                   Evolv Consulting (Multiple Client Placements): Data Science
-                  and Data Engineering Consultant | June 2021 - Present{" "}
+                  and Data Engineering Consultant | June 2021 - May 2023{" "}
                 </li>
                 <li>
                   EPSoft Technologies: Director of Data Science, Research and
