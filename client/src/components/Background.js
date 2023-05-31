@@ -6,13 +6,12 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 
 import { Canvas } from "@react-three/fiber";
-import Starfield from "./Starfield";
-
 
 import { Routes, Route, HashRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import GithubRepositories from "../pages/GithubRepositories";
 import NoPage from "../pages/NoPage";
+import FourierSeries from "./FourierSeries";
 
 export default function Background() {
   return (
@@ -31,14 +30,6 @@ export default function Background() {
                 height: "100%",
               }}
             >
-              <perspectiveCamera
-                position={[0, 0, 10]}
-                fov={100}
-                aspect={window.innerWidth / window.innerHeight}
-              />
-              <ambientLight intensity={0.5} />
-              <pointLight position={[10, 10, 10]} />
-              <Starfield />
             </Canvas>
             <Container fluid>
               <Row>
