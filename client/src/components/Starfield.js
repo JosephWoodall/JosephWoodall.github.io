@@ -4,13 +4,15 @@ import * as THREE from "three";
 
 export default function Starfield() {
   const ref = useRef();
-  const { width, height } = useThree(state => state.viewport)
+  const { width, height } = useThree((state) => state.viewport);
   const points = [];
+  const color = new THREE.Color("#1bfd9c");
   for (let i = 0; i < 10000; i++) {
     const x = Math.random() * 10 - 5;
     const y = Math.random() * 10 - 5;
     const z = Math.random() * 30 - 10; // Adjust this value to change the initial z position of the points
     const point = new THREE.Vector3(x, y, z);
+    point.color = Math.random() < 0.75 ? color : new THREE.Color("white");
     points.push(point);
   }
 
@@ -60,7 +62,7 @@ export default function Starfield() {
       {points.map((point, index) => (
         <mesh key={index} position={point}>
           <sphereBufferGeometry args={[0.005, 16, 16]} />
-          <meshBasicMaterial color={"white"} />
+          <meshBasicMaterial color={point.color} />
         </mesh>
       ))}
     </mesh>
