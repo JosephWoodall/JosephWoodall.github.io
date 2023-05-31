@@ -11,7 +11,7 @@ import { Routes, Route, HashRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import GithubRepositories from "../pages/GithubRepositories";
 import NoPage from "../pages/NoPage";
-import FourierSeries from "./FourierSeries";
+import PepePlanetSpin from "./PepePlanetSpin";
 
 export default function Background() {
   return (
