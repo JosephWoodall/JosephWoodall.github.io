@@ -33,23 +33,22 @@ export default function Home() {
         <Row>
           <Col sm>
             <h1>Research Spotlight</h1>
-            <div>
-              Deep Learning for Online Fashion: A Novel Solution for the Retail
-              E-Commerce Industry.
-              <i>
-                {" "}
-                The link to the article itself is coming soon in the next issue
-                of the SMU Data Science Journal!
-              </i>
-            </div>
+            <a
+              href="https://scholar.smu.edu/datasciencereview/vol6/iss2/17/"
+              target="_blank"
+            >
+              <body-button variant="outline-primary">
+                See the Article
+              </body-button>{" "}
+            </a>
             <div className="body-background"></div>
-            {/*<body-button variant="outline-primary" href=""> See the Article</body-button>{" "}*/}
           </Col>
           <Col sm>
             <div>
-              The online shopping experience for clothing can be further
-              enhanced by implementing Deep Learning techniques, such as
-              Computer Vision and personalized recommendation systems.
+              Deep Learning for Online Fashion: A Novel Solution for the Retail
+              E-Commerce Industry. The online shopping experience for clothing
+              can be further enhanced by implementing Deep Learning techniques,
+              such as Computer Vision and personalized recommendation systems.
               Automation, as a principle, can be applied to solving problems
               surrounding efficacy, efficiency, and security. It also provides a
               layer of abstraction for the user during the online shopping
@@ -64,17 +63,13 @@ export default function Home() {
         </Row>
       </Container>
       <Container>
-        <Row>
-          <Col sm>
-            <h1>Professional High Level Overview</h1>
-            <a
-              href="https://www.overleaf.com/read/vdwzyqmwhcjc"
-              target="_blank"
-            >
-              <body-button variant="outline-primary">See my Resume</body-button>{" "}
-            </a>
-          </Col>
-        </Row>
+        <div className="body-background"></div>
+        <Col sm>
+          <h1>Professional High Level Overview</h1>
+          <a href="https://www.overleaf.com/read/vdwzyqmwhcjc" target="_blank">
+            <body-button variant="outline-primary">See my Resume</body-button>{" "}
+          </a>
+        </Col>
         <Row>
           <div className="body-background"></div>
           <Col sm>
@@ -97,10 +92,10 @@ export default function Home() {
               <ul>
                 <li>
                   Programming: Python, R, Java, SQL and NoSQL (Oracle, SQL
-                  Server, PostgresQL, MongoDB, GraphQL){" "}
+                  Server, PostgresQL, MongoDB, GraphQL), C/C++
                 </li>
                 <li>
-                  Packages: NumPy, Spark, Pandas, Pytorch, Tensorflow,
+                  Packages: NumPy, Spark, Pandas/Polars, PyTorch, Tensorflow,
                   SciKit-Learn, Matplotlib, Requests
                 </li>
                 <li>
@@ -108,15 +103,9 @@ export default function Home() {
                   Docker, Kubernetes, PowerBI, Tableau, Jira
                 </li>
                 <li>
-                  Machine Learning: Linear/Logistic Regression, Decision Trees
-                  and Forests, Support Vector Machines, Gradient Boosting
-                  Machines, Time Series, Clustering (K-Means, KNN, DBSCAN,
-                  K-Medoids), Principal Component Analysis (PCA).
-                </li>
-                <li>
-                  Deep Learning: Convolutional Neural Networks (CNN), Recurrent
-                  Neural Networks (RNN), Generative Adversarial Networks (GAN),
-                  Long Short Term Memory Networks (LTSM)
+                  Machine Learning, Deep Learning, Reinforcement Learning:
+                  please see my repo
+                  <code> turbo-barnacle</code>, for examples of my work.
                 </li>
               </ul>
             </div>
@@ -162,8 +151,11 @@ export default function Home() {
             <div>
               <ul>
                 <li>
-                  (LINK TO CAPSTONE RESEARCH ARTICLE ON SMU DATA SCIENCE REVIEW
-                  TO GO HERE)
+                  Harris, Zachary O.; Katta, Gowtham G.; Slater, Robert; and
+                  Woodall, Joseph L. IV (2022) "Deep Learning for Online
+                  Fashion: A Novel Solution for the Retail E-Commerce Industry,"
+                  SMU Data Science Review: Vol. 6: No. 2, Article 17. Available
+                  at: https://scholar.smu.edu/datasciencereview/vol6/iss2/17
                 </li>
               </ul>
             </div>
